@@ -1,7 +1,7 @@
 package com.example.phonepe.network
 
-import com.example.myrecipeapp.BuildConfig
-import com.example.myrecipeapp.utils.APIConstants
+import com.example.phonepe.BuildConfig
+import com.example.phonepe.common.APIConstants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

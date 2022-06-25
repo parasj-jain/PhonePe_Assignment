@@ -1,6 +1,6 @@
 package com.example.phonepe.network
 
-import com.example.myrecipeapp.utils.APIConstants
+import com.example.phonepe.common.APIConstants
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.io.IOException
