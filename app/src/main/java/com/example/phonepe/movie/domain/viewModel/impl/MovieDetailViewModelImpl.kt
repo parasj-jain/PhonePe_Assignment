@@ -31,7 +31,7 @@ class MovieDetailViewModelImpl @Inject constructor(
 
     override fun fetchMovieDetail() {
         viewModelScope.launch(Dispatchers.IO + coroutineExceptionHandler) {
-            val recipesResponse = movieRepository.fetchMovieList()
+            val recipesResponse = movieRepository.fetchMovieDetail()
             val movie = recipesResponse.results.map { it.toDomainMovieDetail() }.first()
             _movieDetailFlow.value = Resource.Success(movie)
         }
