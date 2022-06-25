@@ -3,4 +3,7 @@
     <string name="common_loading">Loading…</string>
     <string name="loading_desc">Loading your content</string>
     <string name="movie_image">movie</string>
+    <string name="txt_release_date">Release Date</string>
+    <string name="txt_rating">Rating</string>
+    <string name="txt_popularity">Popularity</string>
 </resources>

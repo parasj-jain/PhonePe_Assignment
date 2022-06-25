@@ -8,4 +8,7 @@ interface MovieApi {
 
     @GET(APIConstants.MOVIE_NOW_PLAYING)
     suspend fun nowPlayingMovies(): MovieResult
+
+    @GET(APIConstants.MOVIE_DETAILS)
+    suspend fun fetchMovieDetail(): MovieResult
 }

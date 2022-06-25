@@ -16,5 +16,6 @@ object APIConstants {
     const val BASE_URL = "https://api.themoviedb.org/"
     const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"
     const val MOVIE_NOW_PLAYING = "3/movie/now_playing"
+    const val MOVIE_DETAILS = "3/movie"
 
 }

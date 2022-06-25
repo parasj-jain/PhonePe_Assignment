@@ -13,4 +13,8 @@ class MovieRepositoryImpl @Inject constructor(
         return movieApi.nowPlayingMovies()
     }
 
+    override suspend fun fetchMovieDetail(): MovieResult {
+        return movieApi.fetchMovieDetail()
+    }
+
 }

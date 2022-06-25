@@ -6,4 +6,6 @@ interface MovieRepository {
 
     suspend fun fetchMovieList() : MovieResult
 
+    suspend fun fetchMovieDetail() : MovieResult
+
 }

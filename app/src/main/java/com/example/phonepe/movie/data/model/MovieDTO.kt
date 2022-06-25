@@ -19,12 +19,3 @@ data class MovieDTO(
     val vote_average: Double,
     val vote_count: Int
 )
-
-fun MovieDTO.toDomainMovie() : Movie {
-    return Movie(
-        id = this.id,
-        title = this.title,
-        overview = this.overview,
-        backdrop_path = APIConstants.IMAGE_BASE_URL + this.backdrop_path
-    )
-}
