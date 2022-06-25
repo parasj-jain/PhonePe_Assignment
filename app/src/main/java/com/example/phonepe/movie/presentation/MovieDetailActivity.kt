@@ -1,4 +1,4 @@
-package com.example.phonepe.movie.persentation
+package com.example.phonepe.movie.presentation
 
 import android.os.Bundle
 import android.view.View

@@ -19,3 +19,9 @@ object APIConstants {
     const val MOVIE_DETAILS = "3/movie"
 
 }
+
+object Constants {
+
+    const val INTENT_EXTRA_MOVIE_ID = "movie_id"
+
+}

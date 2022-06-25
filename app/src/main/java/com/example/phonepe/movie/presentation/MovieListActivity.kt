@@ -1,17 +1,18 @@
-package com.example.phonepe.movie.persentation
+package com.example.phonepe.movie.presentation
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.phonepe.common.Constants
 import com.example.phonepe.common.Resource
 import com.example.phonepe.databinding.ActivityMovieListBinding
 import com.example.phonepe.movie.domain.model.Movie
 import com.example.phonepe.movie.domain.viewModel.MovieListViewModel
 import com.example.phonepe.movie.domain.viewModel.impl.MovieListViewModelImpl
-import com.example.phonepe.movie.persentation.adapter.MovieAdapter
+import com.example.phonepe.movie.presentation.adapter.MovieAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -50,7 +51,12 @@ class MovieListActivity : AppCompatActivity() {
     }
 
     private fun movieClicked(movie: Movie) {
-        Log.e(MovieListActivity::class.java.simpleName, "Movie ${movie.title} Clicked")
+//        Log.e(MovieListActivity::class.java.simpleName, "Movie ${movie.title} Clicked")
+
+        startActivity(
+            Intent(this@MovieListActivity, MovieDetailActivity::class.java)
+                .putExtra(Constants.INTENT_EXTRA_MOVIE_ID, movie.id)
+        )
     }
 
     private fun handleResource(resource: Resource<List<Movie>>) {

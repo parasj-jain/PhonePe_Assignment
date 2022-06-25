@@ -13,8 +13,8 @@
         android:name=".MovieApplication"
         android:theme="@style/Theme.PhonePe">
         <activity
-            android:name=".movie.persentation.MovieListActivity"
-            android:screenOrientation="portrait"
+            android:name=".movie.presentation.MovieListActivity"
+            android:screenOrientation="fullSensor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".movie.presentation.MovieDetailActivity"
+            android:screenOrientation="fullSensor"
+            android:exported="false"/>
     </application>
 
 </manifest>

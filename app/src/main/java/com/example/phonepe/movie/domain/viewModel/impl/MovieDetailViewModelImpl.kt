@@ -4,7 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.phonepe.common.Resource
 import com.example.phonepe.movie.domain.model.MovieDetail
-import com.example.phonepe.movie.domain.model.toDomainMovie
 import com.example.phonepe.movie.domain.model.toDomainMovieDetail
 import com.example.phonepe.movie.domain.repository.MovieRepository
 import com.example.phonepe.movie.domain.viewModel.MovieDetailViewModel

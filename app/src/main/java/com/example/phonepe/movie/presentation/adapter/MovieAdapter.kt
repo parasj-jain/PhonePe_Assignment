@@ -1,4 +1,4 @@
-package com.example.phonepe.movie.persentation.adapter
+package com.example.phonepe.movie.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
